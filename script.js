@@ -1,19 +1,15 @@
-// 
-document.getElementById('button').addEventListener('click', comparision)
 let age = 0
 
-function comparision() {
-    // get the age number and convert to an integer
-   age = document.getElementById('input').value
-   age = parseInt(age)
+document.getElementById('Check-Age').addEventListener('click', checkAgeRating)
 
-// checks if user's age  is younger than 17
-  if (age >= 17) { 
-  document.getElementById('answer').innerHTML = 'You can see an R  movie alone'
-} else if (age >= 13) {
-  document.getElementById('answer').innerHTML = 'You can see a PG-13 movie alone'
+function checkAgeRating () {
+   age = document.getElementById('input').value
+   document.getElementById('input').style.display = 'block'
+   if (age >= 17) { 
+     document.getElementById('movie').innerHTML = 'R movie'
+} else if (age >= 13) { 
+     document.getElementById('movie').innerHTML = 'PG-13 movie'
 } else if (age >= 5) {
-  document.getElementById('answer').innerHTML = 'You can see a G or PG  movie alone'
+     document.getElementById('movie').innerHTML = 'G or PG movie'
 } else  {
-  document.getElementById ('answer').innerHTML = 'Your too young to watch any of these movies'
-}
+ 
