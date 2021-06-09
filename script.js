@@ -15,5 +15,5 @@ function comparision() {
 } else if (age >= 5) {
   document.getElementById('answer').innerHTML = 'You can see a G or PG  movie alone'
 } else  {
-  document.getElementById ('answer').innerHTML = 'You're too young to watch movies'
+  document.getElementById ('answer').innerHTML = 'Your too young to watch any of these movies'
 }
